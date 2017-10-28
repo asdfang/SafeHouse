@@ -7,6 +7,33 @@ body {
 	font-family: Avenir, sans-serif;
 }
 
+p {
+	font-family: montserrat-light;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+@font-face {
+  font-family: montserrat-regular;
+  src: url(./fonts/Montserrat-Regular.otf);
+}
+
+@font-face {
+  font-family: montserrat-light;
+  src: url(./fonts/Montserrat-Light.otf);
+}
 
 #screen {
 	height: 530px;
@@ -15,8 +42,15 @@ body {
 }
 
 .head-bar {
-
+	background-color: #E2E2E1;
+	height: 45px;
+	color: white;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 45px;
 }
+
+/* BUTTONS */
 
 .back-button {
 
@@ -25,15 +59,29 @@ body {
 .circle_node {
 	width: 50px;
 	height: 50px;
-	border-radius: 25px;
-	background-color: #000000;
+	border-radius: 29px;
+	border-color: #81C073;
+	border-style: solid;
+	border-width: 4px;
+	background-image: url("./images/andres_profile_image.PNG");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 180%;
 }
 
 .long_button {
 	width: 200px;
 	height: 40px;
-	background-color: #000000;
+	background-color: #81C073;
+	/*#E8413A - This is the red color*/
 	border-radius: 10px;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 40px;
+}
+
+.long_button:hover {
+	cursor: pointer;
 }
 
 .switch {
@@ -69,25 +117,21 @@ body {
   transition: .4s;
 }
 
-input:checked + .slider {
-  background-color: #2196F3;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+/* TEXTS */
+.page_header {
+	color: #3f3f3f;
+}
+
+.button_text {
+	font-family: montserrat-light;
+	text-decoration: none !important;
+	color: white;
 }
