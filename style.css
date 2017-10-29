@@ -136,19 +136,6 @@ input:checked + .slider:before {
 }
 
 
-#s1{
-  text-align: center;
-  margin:30px;
-  margin-left: 100px;
-  margin-top:20px;
-}
-
-#s2{
-  text-align: center;
-  margin:30px;
-  margin-left: 20px;
-  margin-top:20px;
-}
 
 .switch {
   position: relative;
