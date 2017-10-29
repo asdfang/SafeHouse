@@ -1,0 +1,63 @@
+<html>
+<header>
+   <title>Home</title>
+   <link rel="stylesheet" type="text/css" href="style.css"/>
+</header>
+   <body>
+      <div id="screen">
+      	<div class="head-bar" style="opacity: 0.2;">
+          <p class="page_header">Home</p>
+      	</div>
+
+        <div class="home_modal_container" style="background-color: #D16969;">
+          <a href="home.html"><img src="./images/icons/cancel.png" style="position: relative; top: -60px; left: 110px; width: 24px;" /></a>
+          <p style="color: white; font-size: 20px; padding-top: 20px;">Andres Kim</p>
+          <p style="color: white; opacity: 0.5; font-size: 15px;">Last updated 10/17/2017</p>
+          <p style="color: white; opacity: 0.5; font-size: 15px;">1023-1 Emerson Street</p>
+          <p style="color: white; opacity: 0.5; font-size: 15px; margin-top: -15px;">Evanston, IL 60201</p>
+          <div class="row" style="padding-left: 47px;">
+            <a href="callprofile.html">
+              <div class="circle_node" style="border-color: #FFFFFF;">
+                <img src="./images/icons/phone-call.png" style="position: relative; padding-left: 0px; padding-top: 13px;" />
+              </div>
+            </a>
+            <a onClick="sendSafetyRequest()">
+              <div class="circle_node" style="border-color: #FFFFFF;">
+                <p style="color: white; font-size: 12px; padding-top: 5px;">SAFE?</p>
+              </div>
+            </a>
+          </div>
+          <p id="modal_feedback" style="color: white; position: relative; top: 20px;"></p>
+        </div>
+
+        <!-- PROFILE NODE -->
+        <div class="home_main_container" style="opacity: 0.2; padding-top: 50px;">
+          <div class="row">
+            <div class="circle_node" style="background-image: url('./images/scott_profile_image.jpg'); border-color: #D16969;"></div>
+            <div class="circle_node" style="background-image: url('./images/junwon_profile_image.jpg'); border-color: #81C073;"></div>
+            <div class="circle_node" style="background-image: url('./images/sean_profile_image.jpg'); border-color: #D16969;"></div>
+          </div>
+          <div class="row">
+            <div class="circle_node" style="background-image: url('./images/alex_profile_image.jpg'); border-color: #81C073;"></div>
+            <div id="node_me" class="circle_node" style="background-image: url('./images/andres_profile_image.PNG'); border-color: #81C073;"></div>
+            <div class="circle_node" style="background-image: url('./images/vivian_profile_image.jpg'); border-color: #81C073;"></div>
+          </div>
+          <div class="row">
+            <div class="circle_node" style="background-image: url('./images/diana_profile_image.jpg'); border-color: #81C073;"></div>
+            <div class="circle_node" style="background-image: url('./images/mark_profile_image.jpg'); border-color: #81C073;"></div>
+            <div class="circle_node" style="background-image: url('./images/daniel_profile_image.jpg'); border-color: #D16969;"></div>
+          </div>
+        </div>
+
+        <div class="bottom-bar" style="opacity: 0.2;">
+          <div class="black_line"></div>
+          <a href="callemergency.html" style="text-decoration:none; position: relative; left: 50px; bottom: 8px;">
+            <div class="long_button" style="background-color: #D16969;">
+              <p class="button_text">CALL 911</p>
+            </div>
+          </a>
+        </div>
+      </div>
+   </body>
+   <script src="home.js"></script>
+</html>
