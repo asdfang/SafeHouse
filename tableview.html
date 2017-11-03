@@ -1,0 +1,35 @@
+<html>
+<header>
+   <title>Home</title>
+   <link rel="stylesheet" type="text/css" href="style.css"/>
+</header>
+   <body>
+      <div id="screen">
+      	<div class="head-bar">
+          <p class="page_header">Home</p>
+      	</div>
+
+        <div class="toggle_container">
+          <label class="switch" style="right: 83px;">
+            <input id="safe_toggle" onClick="changeSafety()" type="checkbox" checked>
+            <span class="slider round"></span>
+            <p class="toggle_text" style="left: 17px;">Safe</p>
+          </label>
+          <label class="switch" style="left: 60px;">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+            <p class="toggle_text" style="left: 14px;">View</p>
+          </label>
+        </div>
+<div class="bottom-bar">
+          <div class="black_line"></div>
+          <a href="callemergency.html" style="text-decoration:none; position: relative; left: 50px; bottom: 8px;">
+            <div class="long_button" style="background-color: #D16969;">
+              <p class="button_text">CALL 911</p>
+            </div>
+          </a>
+        </div>
+      </div>
+   </body>
+   <script src="home.js"></script>
+</html>
