@@ -4,16 +4,57 @@
    <link rel="stylesheet" type="text/css" href="style.css"/>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
+   <style>
+      body {
+         font-family: montserrat-light;
+      }
+      p {
+         text-align: center;
+         padding-top: 96px;
+         padding-bottom: 8px;
+         color: gray;
+         font-size: 18px;
+      }
+      div {
+         text-align: center;
+      }
+      div #form {
+         padding-top: 8px;
+         padding-bottom: 8px;
+      }
+      div #center {
+         margin: auto;
+      }
+      input {
+         margin: 4px;
+         height: 32px;
+         width: 196px;
+      }
+      input, input::-webkit-input-placeholder {
+         font-size: 14px;
+      }
+   </style>
 </header>
    <body>
       <div id="screen">
-        <p style="text-align: center; padding-top:120px; padding-bottom: 25px; color: gray">Just a bit more information!</p>
-        <div style="margin:20px;margin-left:50px;width:200px;height:25px;border:2px solid #000;font-family:montserrat-light;color:gray;padding-left:5px;font-style:italic;font-size:small;padding-top:5px;">Family Name</div>
-        <div style="margin:20px;margin-left:50px;width:200px;height:25px;border:2px solid #000;font-family:montserrat-light;color:gray;padding-left:5px;font-style:italic;font-size:small;padding-top:5px;">Your Name</div>
-        <div style="margin:20px;margin-left:50px;width:200px;height:25px;border:2px solid #000;font-family:montserrat-light;color:gray;padding-left:5px;font-style:italic;font-size:small;padding-top:5px;">Phone Number</div>
-        <div class="long_button" style="margin-top: 50px; margin-left: 50px">
-          <h1>Next</h1>
-        </div>
+         <!-- <p style="text-align: center; padding-top:120px; padding-bottom: 25px; color: gray">Just a bit more information!</p>
+         <div style="margin:20px;margin-left:50px;width:200px;height:25px;border:2px solid #000;font-family:montserrat-light;color:gray;padding-left:5px;font-style:italic;font-size:small;padding-top:5px;">Family Name</div>
+         <div style="margin:20px;margin-left:50px;width:200px;height:25px;border:2px solid #000;font-family:montserrat-light;color:gray;padding-left:5px;font-style:italic;font-size:small;padding-top:5px;">Your Name</div>
+         <div style="margin:20px;margin-left:50px;width:200px;height:25px;border:2px solid #000;font-family:montserrat-light;color:gray;padding-left:5px;font-style:italic;font-size:small;padding-top:5px;">Phone Number</div> -->
+         <p>Just a bit more information!</p>
+         <div id="form">
+            <form>
+               <input type="text" name="family-name" placeholder="Last Name" required><br>
+               <input type="text" name="first-name" placeholder="First Name" required><br>
+               <input type="text" name="phone-number" placeholder="Phone Number" required><br>
+               <div class="long_button" id="center">
+                  <h1>Next</h1>
+               </div>
+            </form>
+         </div>
+
+
+
       </div>
    </body>
 </html>
