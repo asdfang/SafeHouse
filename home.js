@@ -13,3 +13,4 @@ function changeSafety() {
 function sendSafetyRequest() {
   document.getElementById("modal_feedback").innerHTML = "Safety request has been sent.";
 }
+
