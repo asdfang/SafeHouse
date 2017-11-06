@@ -4,7 +4,7 @@
 body {
 	background-image: url("images/iphoneOL.jpg");
 	background-repeat: no-repeat;
-	font-family: Avenir, sans-serif;
+	font-family: montserrat-light;
 }
 
 p {
@@ -93,10 +93,6 @@ a:link, a:visited {
 
 /* BUTTONS */
 
-.back-button {
-
-}
-
 .circle_node {
 	width: 50px;
 	height: 50px;
@@ -134,6 +130,7 @@ a:link, a:visited {
 	text-align: center;
 	vertical-align: middle;
 	line-height: 40px;
+	margin: auto;
 }
 
 .long_button:hover {
@@ -198,6 +195,11 @@ a:link, a:visited {
 }
 
 /* TEXTS */
+.greyed_out_text {
+	text-align: center;
+	color: gray;
+}
+
 .page_header {
 	color: #3f3f3f;
 }

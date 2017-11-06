@@ -5,11 +5,6 @@
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
    <style type="text/css">
-    p {
-      text-align: center;
-      padding-top:200px;
-      color: gray
-    }
     img {
       position: relative;
     }
@@ -28,19 +23,25 @@
       top: 1px;
       width: 26px;
     }
+    .greyed_out_text {
+      padding-top: 150px;
+    }
    </style>
 </header>
    <body>
       <div id="screen">
-        <p>Here's your new family code:</p>
+        <p class="greyed_out_text">Here's your new family code:</p>
         <div class="long_button" id="code">
           <h1>6 E V F X</h1>
         </div>
          <div class="icons">
-          <img src="./images/icons/ic_chat.png" id="chat"/>
-          <i class="material-icons" id="email">email</i>
-          <img src="./images/icons/facebook_icon.png" id="fb"/>
+            <img src="./images/icons/ic_chat.png" id="chat"/>
+            <i class="material-icons" id="email">email</i>
+            <img src="./images/icons/facebook_icon.png" id="fb"/>
          </div>
+         <div class="button_container">
+           <a href="./home.html"><div class="long_button"><p class="button_text">Next</p></div></a>
+        </div>
       </div>
    </body>
 </html>

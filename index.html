@@ -1,28 +1,29 @@
 <html>
-<header>
-   <title>Safe Fam Prototype</title>
-   <link rel="stylesheet" type="text/css" href="style.css"/>
-</header>
+  <header>
+     <title>SafeHouse</title>
+     <link rel="stylesheet" type="text/css" href="style.css"/>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+     rel="stylesheet">
+     <style>
+        div.center_container {
+           text-align: center;
+           padding-top: 110px;
+        }
+        a {
+          text-decoration: none;
+        }
+        img {
+          width: 150;
+        }
+     </style>
+  </header>
+
    <body>
-      <div id="screen">
-      	<div class="head-bar">
-          <p class="page_header">Home</p>
-      	</div>
-
-        <!-- PROFILE NODE -->
-        <div class="circle_node"></div>
-
-        <!-- LONG BUTTON -->
-        <a href="" style="text-decoration:none;"><div class="long_button"><p class="button_text">Next</p></div></a>
-
-        <!-- TOGGLE -->
-        <label class="switch">
-          <input type="checkbox" checked>
-          <span class="slider round"></span>
-        </label>
+      <div class="center_container" id="screen">
+        <img src="./images/logo-01.png" width="150" />
+        <p class="greyed_out_text">Welcome to Safefam</p>
+        <a href="./signup.html" style="text-decoration:none;"><div class="long_button"><p class="button_text">Create New Group</p></div></a>
+        <a href="./notfound.html" style="text-decoration:none;"><div class="long_button"><p class="button_text">Join Group</p></div></a>
       </div>
    </body>
 </html>
-<!--
-* bg iphone img is 363x762px
-* iphone 'screen' is apprx 300x530 -->
