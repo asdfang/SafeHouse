@@ -17,4 +17,4 @@ When a natural disaster occurs, people wonder about the safety of their family m
 
 ## Team JAVA Members
 
-Junwon Jang, Andres Kim, Vivian Chen, Alex Fang
+Junwon Jang, Andres Kim, Alex Fang, Vivian Chen
