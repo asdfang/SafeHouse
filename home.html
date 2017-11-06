@@ -20,6 +20,9 @@
         #view {
           left: 60px;
         }
+        #view_mode {
+          padding-top: 43px;
+        }
      </style>
   </header>
    <body>
@@ -32,7 +35,7 @@
           <label class="switch" id="safe">
             <input id="safe_toggle" onClick="changeSafety()" type="checkbox" checked>
             <span class="slider round"></span>
-            <p class="toggle_text">Safe</p>
+            <p class="toggle_text" id="toggle_text">Safe</p>
           </label>
           <label class="switch" id="view">
             <input id="view_toggle" onClick="toggleView()" type="checkbox" checked>

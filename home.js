@@ -12,9 +12,13 @@ function changeNodeSafety() {
   if (_safeToggle.checked) {
      document.getElementById("node_me").style.borderColor = "#81C073";
      document.getElementById("home_feedback").innerHTML = "";
+     document.getElementById("toggle_text").innerHTML = "Safe";
+     document.getElementById("toggle_text").style.marginLeft = 0;
   } else {
     document.getElementById("node_me").style.borderColor = "#D16969";
     document.getElementById("home_feedback").innerHTML = "Family has been notified.";
+    document.getElementById("toggle_text").innerHTML = "Not Safe";
+    document.getElementById("toggle_text").style.marginLeft = -10;
   }
 }
 
@@ -25,16 +29,22 @@ function changeTableSafety() {
     document.getElementById("my-safety-status").style.backgroundColor = "white";
     document.getElementById("my-safety-status").innerHTML = "SAFE";
     document.getElementById("notify-family").innerHTML = "";
+    document.getElementById("toggle_text").innerHTML = "Safe";
+    document.getElementById("toggle_text").style.marginLeft = 0;
   } else {
     document.getElementById("my-safety-status").style.backgroundColor = "#D16969";
     document.getElementById("my-safety-status").style.color = "white";
     document.getElementById("my-safety-status").innerHTML = "SAFE?";
     document.getElementById("notify-family").innerHTML = "Family has been notified.";
+    document.getElementById("toggle_text").innerHTML = "Not Safe";
+    document.getElementById("toggle_text").style.marginLeft = -10;
   }
 }
 
 function toggleView() {
-  document.getElementById("view_mode").innerHTML = (document.getElementById("view_toggle").checked) ? node_view : table_view;
+  var _viewToggle = document.getElementById("view_toggle");
+  document.getElementById("view_mode").innerHTML = (_viewToggle.checked) ? node_view : table_view;
+  _viewToggle.checked ? changeNodeSafety() : changeTableSafety();
 }
 
 const node_view = `
