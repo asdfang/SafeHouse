@@ -25,6 +25,10 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 
+a:link, a:visited {
+	text-decoration: none;
+}
+
 @font-face {
   font-family: montserrat-regular;
   src: url(./fonts/Montserrat-Regular.otf);
