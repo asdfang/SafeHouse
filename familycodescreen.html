@@ -4,17 +4,42 @@
    <link rel="stylesheet" type="text/css" href="style.css"/>
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
    rel="stylesheet">
+   <style type="text/css">
+    p {
+      text-align: center;
+      padding-top:200px;
+      color: gray
+    }
+    img {
+      position: relative;
+    }
+    #chat {
+      margin-right: 18px;
+      margin-left: 70px;
+      top:3px;
+      left: 20px;
+      width: 26px;
+    }
+    #email {
+      margin: 20px;
+      margin-right: 16px;
+    }
+    #fb {
+      top: 1px;
+      width: 26px;
+    }
+   </style>
 </header>
    <body>
       <div id="screen">
-        <p style="text-align: center; padding-top:200px; color: gray">Here's your new family code:</p>
-        <div class="long_button" id = "code">
+        <p>Here's your new family code:</p>
+        <div class="long_button" id="code">
           <h1>6 E V F X</h1>
         </div>
-         <div class = "share">
-          <img src="./images/icons/ic_chat.png" style="position: relative; margin-right: 18px; margin-left: 70px; top:3px; left: 20px; width: 26px;"/>
-          <i class="material-icons" style= "margin: 20px; margin-right: 16px">email</i>
-          <img src="./images/icons/facebook_icon.png" style="position: relative; top:1px; width: 26px;"/>
+         <div class="icons">
+          <img src="./images/icons/ic_chat.png" id="chat"/>
+          <i class="material-icons" id="email">email</i>
+          <img src="./images/icons/facebook_icon.png" id="fb"/>
          </div>
       </div>
    </body>

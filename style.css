@@ -104,6 +104,21 @@ input:checked + .slider:before {
 	background-size: 180%;
 	float: left;
 	margin: 10px;
+	position: relative;
+}
+.gray-border {
+  border-color: #939393;
+}
+.red-border {
+  border-color: #3F3F3F;
+}
+.hang-up {
+	background-color: #D16969;
+	border-color: #D16969;
+}
+.circle_node img {
+	padding-left: 13px;
+	padding-top: 13px;
 }
 
 .long_button {
@@ -259,4 +274,12 @@ input:checked + .slider:before {
 
 #notify-family {
 	text-align: center;
+}
+
+/* For certain pages */
+.call-p {
+	text-align: center;
+    font-size: 25px;
+    color: white;
+    padding-bottom: 50px;
 }
