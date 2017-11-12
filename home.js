@@ -49,7 +49,7 @@ function toggleView() {
 
 const node_view = `
   <div style=\"text-align: center; padding-top: 20px; margin-bottom: 20px; position: absolute;\">
-    <p id=\"home_feedback\" style=\"position: relative; left: 50px;\"></p>
+    <p id=\"home_feedback\" style=\"position: relative; left: 50px; bottom: 30px;\"></p>
   </div>
   <div class="home_main_container">
     <div class="row">
@@ -57,10 +57,10 @@ const node_view = `
       <a href="modal.html"><div class="circle_node" style="background-image: url('./images/junwon_profile_image.jpg'); border-color: #81C073;"></div></a>
       <a href="modal.html"><div class="circle_node" style="background-image: url('./images/sean_profile_image.jpg'); border-color: #D16969;"></div></a>
     </div>
-    <div class="row">
-      <a href="modal.html"><div class="circle_node" style="background-image: url('./images/alex_profile_image.jpg'); border-color: #81C073;"></div></a>
-      <a href="modal.html"><div id="node_me" class="circle_node" style="background-image: url('./images/andres_profile_image.PNG'); border-color: #81C073;"></div></a>
-      <a href="modal.html"><div class="circle_node" style="background-image: url('./images/vivian_profile_image.jpg'); border-color: #81C073;"></div></a>
+    <div class="middle_row">
+      <a href="modal.html"><div class="circle_node middle_node" style="background-image: url('./images/alex_profile_image.jpg'); border-color: #81C073;"></div></a>
+      <a href="modal.html"><div id="node_me" class="circle_node node_me" style="background-image: url('./images/andres_profile_image.PNG'); border-color: #81C073;"></div></a>
+      <a href="modal.html"><div class="circle_node middle_node" style="background-image: url('./images/vivian_profile_image.jpg'); border-color: #81C073;"></div></a>
     </div>
     <div class="row">
       <a href="modal.html"><div class="circle_node" style="background-image: url('./images/diana_profile_image.jpg'); border-color: #81C073;"></div></a>
