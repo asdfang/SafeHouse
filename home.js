@@ -75,6 +75,17 @@ const table_view = `
     <a href="modal.html">
       <div class="row_container">
         <div class="table_row">
+          <p class="name-in-table">ME</p>
+          <p class="update-info" style="color: #b3b3b3">Last Updated 11/03/2017</p>
+        </div>
+        <div class="safe-info">
+          <p id="my-safety-status" style="color: #81C073">SAFE</p>
+        </div>
+      </div>
+    </a>
+    <a href="modal.html">
+      <div class="row_container">
+        <div class="table_row">
           <p class="name-in-table">Andres Kim</p>
           <p class="update-info" style="color: #b3b3b3">Last Updated 11/03/2017</p>
         </div>
@@ -124,17 +135,6 @@ const table_view = `
         </div>
         <div class="safe-info">
           <p style="background-color: #D16969; color: white">SAFE?</p>
-        </div>
-      </div>
-    </a>
-    <a href="modal.html">
-      <div class="row_container">
-        <div class="table_row">
-          <p class="name-in-table">ME</p>
-          <p class="update-info" style="color: #b3b3b3">Last Updated 11/03/2017</p>
-        </div>
-        <div class="safe-info">
-          <p id="my-safety-status" style="color: #81C073">SAFE</p>
         </div>
       </div>
     </a>
