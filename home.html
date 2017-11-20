@@ -14,6 +14,22 @@
         .toggle_text {
           left: 14px;
         }
+        .iphonesContainer {
+          width: 770px;
+        }
+        .iphoneLeft {
+          background-image: url("images/iphoneOL.jpg");
+        	background-repeat: no-repeat;
+          position: relative;
+          width: 370px;
+          float: left;
+        }
+        .iphoneRight {
+          background-image: url("images/iphoneOL.jpg");
+        	background-repeat: no-repeat;
+          position: relative;
+          width: 370px;
+        }
         .iphone {
           background-image: url("images/iphoneOL.jpg");
         	background-repeat: no-repeat;
@@ -61,6 +77,9 @@
            color: #B7B7B7;
            font-size: 10px;
          }
+         #screen {
+           padding-left: 8px;
+         }
          #safe {
            right: 83px;
          }
@@ -73,37 +92,43 @@
      </style>
   </header>
    <body>
-      <div id="screen">
-      	<div class="head-bar">
-          <p class="page_header"><img src="./images/logo-01.png" height="100%" /></p>
-      	</div>
+     <div class="iphonesContainer">
+       <div class="iphoneLeft">
+        <div id="screen">
+        	<div class="head-bar">
+            <p class="page_header"><img src="./images/logo-01.png" height="100%" /></p>
+        	</div>
 
-        <div class="toggle_container">
-          <label class="switch" id="safe">
-            <input id="safe_toggle" onClick="changeSafety()" type="checkbox" checked>
-            <span class="slider round"></span>
-            <p class="toggle_text" id="toggle_text">Safe</p>
-          </label>
-          <label class="switch" id="view">
-            <input id="view_toggle" onClick="toggleView()" type="checkbox" checked>
-            <span class="slider round"></span>
-            <p class="toggle_text">View</p>
-          </label>
-        </div>
+          <div class="toggle_container">
+            <label class="switch" id="safe">
+              <input id="safe_toggle" onClick="changeSafety()" type="checkbox" checked>
+              <span class="slider round"></span>
+              <p class="toggle_text" id="toggle_text">Safe</p>
+            </label>
+            <label class="switch" id="view">
+              <input id="view_toggle" onClick="toggleView()" type="checkbox" checked>
+              <span class="slider round"></span>
+              <p class="toggle_text">View</p>
+            </label>
+          </div>
 
-        <div id="view_mode"></div>
+          <div id="view_mode"></div>
 
-        <div class="bottom-bar">
-          <div class="black_line"></div>
-          <a href="callemergency.html">
-            <div class="long_button">
-              <p class="button_text">CALL 911</p>
-            </div>
-          </a>
+          <div class="bottom-bar">
+            <div class="black_line"></div>
+            <a href="callemergency.html">
+              <div class="long_button">
+                <p class="button_text">CALL 911</p>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-      <div id="notification_screen">
+      <div class="iphoneRight" style="float: right;">
+        <div id="notification_screen">
+        </div>
       </div>
+    </div>
    </body>
    <script src="home.js"></script>
 </html>
