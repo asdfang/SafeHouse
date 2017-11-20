@@ -18,6 +18,7 @@
       div #center {
          margin: auto;
       }
+
       input {
          margin: 4px;
          height: 32px;
@@ -32,19 +33,35 @@
       .greyed_out_text {
         padding-top: 150px;
       }
+      input[type='number'] {
+          -moz-appearance:textfield;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+      }
+      input[type=submit] {
+         font-family: montserrat-light;
+         text-decoration: none !important;
+         color: white;
+      }
    </style>
 </header>
    <body>
       <div id="screen">
          <p class="greyed_out_text">Just a bit more information!</p>
          <div id="form">
-            <form>
-               <input type="text" name="family-name" placeholder="Last Name" required><br>
-               <input type="text" name="first-name" placeholder="First Name" required><br>
-               <input type="text" name="phone-number" placeholder="Phone Number" required><br>
+            <form action="familycodescreen.html">
+               <!-- Simple form validation -- checks for one word, only letters for name; checks for number >= 0 for phone number -->
+               <input type="text" id="family-name" name="family-name" placeholder="Last Name" pattern="[a-zA-Z]+" required><br>
+               <input type="text" id="first-name" name="first-name" placeholder="First Name" pattern="[a-zA-Z]+" required><br>
+               <input type="number" name="phone-number" placeholder="Phone (numbers only)" min="0" required><br><br>
                <div class="button_container">
+                  <input type="submit" class="long_button" text="Next">
+               </div>
+               <!-- <div class="button_container">
                  <a href="./familycodescreen.html"><div class="long_button"><p class="button_text">Next</p></div></a>
-              </div>
+              </div> -->
             </form>
          </div>
       </div>
