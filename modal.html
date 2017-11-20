@@ -3,11 +3,54 @@
    <title>Home</title>
    <link rel="stylesheet" type="text/css" href="style.css"/>
    <style>
-    .iphone {
+    .head-bar {
+      opacity: 0.2;
+    }
+    .home_modal_container {
+      background-color: #D16969;
+    }
+    .exit_button {
+      position: relative;
+      top: -60px;
+      left: 110px;
+      width: 24px;
+    }
+    .profile_name {
+      color: white;
+      font-size: 20px;
+      padding-top: 20px;
+    }
+    .profile_info {
+      color: white;
+      opacity: 0.5;
+      font-size: 15px;
+    }
+    .row {
+      padding-left: 47px;
+    }
+    .circle_node {
+      border-color: #FFFFFF;
+    }
+    .safe_button_text {
+      color: white;
+      font-size: 12px;
+      padding-top: 5px;
+    }
+    .iphonesContainer {
+      width: 770px;
+    }
+    .iphoneLeft {
       background-image: url("images/iphoneOL.jpg");
     	background-repeat: no-repeat;
-      float: right;
       position: relative;
+      width: 370px;
+      float: left;
+    }
+    .iphoneRight {
+      background-image: url("images/iphoneOL.jpg");
+    	background-repeat: no-repeat;
+      position: relative;
+      width: 370px;
     }
      .time {
        text-align: center;
@@ -52,33 +95,39 @@
    </style>
 </header>
    <body>
-      <div id="screen">
-      	<div class="head-bar" style="opacity: 0.2;">
-          <p class="page_header">Home</p>
-      	</div>
+     <div class="iphonesContainer">
+       <div class="iphoneLeft">
+          <div id="screen">
+          	<div class="head-bar">
+              <p class="page_header">Home</p>
+          	</div>
 
-        <div class="home_modal_container" style="background-color: #D16969;">
-          <a href="home.html"><img src="./images/icons/cancel.png" style="position: relative; top: -60px; left: 110px; width: 24px;" /></a>
-          <p style="color: white; font-size: 20px; padding-top: 20px;">Andres Kim</p>
-          <p style="color: white; opacity: 0.5; font-size: 15px;">Last updated 10/17/2017</p>
-          <p style="color: white; opacity: 0.5; font-size: 15px;">1023-1 Emerson Street</p>
-          <p style="color: white; opacity: 0.5; font-size: 15px; margin-top: -15px;">Evanston, IL 60201</p>
-          <div class="row" style="padding-left: 47px;">
-            <a href="callprofile.html">
-              <div class="circle_node" style="border-color: #FFFFFF;">
-                <img src="./images/icons/phone-call.png" style="position: relative; padding-left: 0px; padding-top: 13px;" />
+            <div class="home_modal_container">
+              <a href="home.html"><img class="exit_button" src="./images/icons/cancel.png"/></a>
+              <p class="profile_name">Scott Cho</p>
+              <p class="profile_info">Last updated 10/17/2017</p>
+              <p class="profile_info">1023-1 Emerson Street</p>
+              <p class="profile_info" style="margin-top: -15px;">Evanston, IL 60201</p>
+              <div class="row">
+                <a href="callprofile.html">
+                  <div class="circle_node">
+                    <img src="./images/icons/phone-call.png" style="position: relative; padding-left: 0px; padding-top: 13px;" />
+                  </div>
+                </a>
+                <a href="#" onClick="sendSafetyRequest()">
+                  <div class="circle_node">
+                    <p class="safe_button_text">SAFE?</p>
+                  </div>
+                </a>
               </div>
-            </a>
-            <a href="#" onClick="sendSafetyRequest()">
-              <div class="circle_node" style="border-color: #FFFFFF;">
-                <p style="color: white; font-size: 12px; padding-top: 5px;">SAFE?</p>
-              </div>
-            </a>
+              <p id="modal_feedback" style="color: white; position: relative; top: 20px;"></p>
+            </div>
           </div>
-          <p id="modal_feedback" style="color: white; position: relative; top: 20px;"></p>
         </div>
-      </div>
-      <div id="notification_screen">
+        <div class="iphoneRight" style="float: right;">
+          <div id="notification_screen">
+          </div>
+        </div>
       </div>
    </body>
    <script src="home.js"></script>

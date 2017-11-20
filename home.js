@@ -153,7 +153,6 @@ const table_view = `
 `;
 
 const notification_screen_html = `
-<div class="iphone">
   <div id="screen" style="background-color: #1D474F; margin-left: 30px;">
     <div class="home_main_container">
       <div>
@@ -170,7 +169,6 @@ const notification_screen_html = `
       </a>
     </div>
   </div>
-</div>
 `;
 
 toggleView();
